@@ -8,6 +8,14 @@ primary_region = 'lax'
 
 [build]
 
+[env]
+  MYSQL_HOST = "localhost"  # 使用数据库实例的主机名（可以是内部或外部 URL，具体取决于您的设置）
+  MYSQL_PORT = "3306"      # 默认 MySQL 端口
+  MYSQL_DATABASE = "community_activity_platform"  # 数据库名称
+  MYSQL_USER = "root"      # 数据库用户名
+  MYSQL_PASSWORD = "123456"  # 数据库密码
+  DATABASE_URL = "mysql://root:123456@localhost:3306/community_activity_platform"  # 连接 URL，改为符合您的设置
+  
 [http_service]
   internal_port = 80
   force_https = true
